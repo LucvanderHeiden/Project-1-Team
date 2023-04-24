@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movementInput;
     Rigidbody2D rb;
+    Animator animator;
 
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,9 +32,47 @@ public class PlayerController : MonoBehaviour
     }
 
     private void FixedUpdate()
-    {   // If movement input is not 0, try to move
+    {
         if (movementInput != Vector2.zero)
         {
+            // Calculate the direction of movement
+            Vector2 direction = movementInput.normalized;
+
+            // Check if the player is moving more in the x direction or y direction
+            if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+            {
+                // Player is moving horizontally
+                if (direction.x > 0)
+                {
+                    // Player is moving right
+                    // Play the "WalkRight" animation
+                    animator.Play("player_right");
+                }
+                else
+                {
+                    // Player is moving left
+                    // Play the "WalkLeft" animation
+                    animator.Play("player_left");
+                }
+            }
+            else
+            {
+                // Player is moving vertically
+                if (direction.y > 0)
+                {
+                    // Player is moving up
+                    // Play the "WalkUp" animation
+                    animator.Play("playeranimation");
+                }
+                else
+                {
+                    // Player is moving down
+                    // Play the "WalkDown" animation
+                    animator.Play("player_down");
+                }
+            }
+
+            // Check for collisions and move the player
             int count = rb.Cast(
                 movementInput,
                 movementFilter,
@@ -43,14 +83,19 @@ public class PlayerController : MonoBehaviour
             {
                 rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
             }
-
+        }
+        else
+        {
+            animator.Play("player_idle");
         }
     }
+
 
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<Vector2>();
     }
+
 
     void TrackDistance()
     {

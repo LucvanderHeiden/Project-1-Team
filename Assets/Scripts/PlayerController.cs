@@ -100,6 +100,5 @@ public class PlayerController : MonoBehaviour
     void TrackDistance()
     {
         distance = Vector3.Distance(transform.position, enemy.position);
-        Debug.Log("Distance: " + distance);
     }
 }

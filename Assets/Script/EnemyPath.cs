@@ -24,7 +24,6 @@ public class EnemyPath : MonoBehaviour
     void Update()
     {
         FieldOfView fovScript = enemy.GetComponent<FieldOfView>();
-        Debug.Log(fovScript.CanSeePlayer);
         if (Vector2.Distance(transform.position, PosA.position) < .1f)
         {
             randomInt = Random.Range(1, 6);

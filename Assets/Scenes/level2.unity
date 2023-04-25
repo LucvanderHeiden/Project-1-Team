@@ -218,6 +218,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: player_with_anim
       objectReference: {fileID: 0}
+    - target: {fileID: 3581202970054743749, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.015686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581202970054743749, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.015686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581202970054743749, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.019607844
+      objectReference: {fileID: 0}
     - target: {fileID: 4077194829540437083, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -659,11 +659,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4077194829540437083, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.6
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 4077194829540437083, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29
+      value: 40.08
       objectReference: {fileID: 0}
     - target: {fileID: 4077194829540437083, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6907,7 +6907,6 @@ GameObject:
   - component: {fileID: 555588313}
   - component: {fileID: 555588312}
   - component: {fileID: 555588314}
-  - component: {fileID: 555588316}
   - component: {fileID: 555588315}
   m_Layer: 0
   m_Name: enemySprite
@@ -7028,27 +7027,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 555588314}
---- !u!50 &555588316
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555588310}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!43 &577150052
 Mesh:
   m_ObjectHideFlags: 0
@@ -31253,7 +31231,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943141876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

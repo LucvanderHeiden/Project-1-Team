@@ -5,41 +5,45 @@ using UnityEngine;
 public class EnemyAnimation : MonoBehaviour
 {
     public Animator animator;
-    public GameObject enemy;
 
-    private Rigidbody2D rb;
+    private Vector3 previousPosition;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        //enemyRB = enemy.GetComponent<Rigidbody2D>();
+        previousPosition = transform.position;
     }
 
     private void Update()
     {
-        // Get the velocity of the Rigidbody2D
-        Vector2 velocity = rb.velocity;
-        //Vector2 velocity = enemyRB.velocity;
+        // Get the current position of the GameObject
+        Vector3 currentPosition = transform.position;
 
-        // Determine the direction based on the velocity
-        if (velocity.y > 0)
+        // Calculate the movement direction based on the difference between the current position and the previous position
+        Vector3 direction = currentPosition - previousPosition;
+
+        // Update the previous position to be the current position
+        previousPosition = currentPosition;
+
+        // Determine the direction based on the movement direction
+        if (direction.y > 0.01)
         {
             animator.Play("killer_up");
         }
-        else if (velocity.y < 0)
+        else if (direction.y < -0.01)
         {
             animator.Play("killer_down");
         }
-        else if (velocity.x < 0)
+        else if (direction.x < 0)
         {
             animator.Play("killer_left");
         }
-        else if (velocity.x > 0)
+        else if (direction.x > 0)
         {
             animator.Play("killer_right");
         }
 
-        Debug.Log(velocity);
+        Debug.Log(direction);
     }
 }
+
 

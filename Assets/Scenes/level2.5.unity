@@ -752,11 +752,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4077194829540437083, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5993886
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 4077194829540437083, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.655715
+      value: 46.04
       objectReference: {fileID: 0}
     - target: {fileID: 4077194829540437083, guid: 5ff238838ffd154479528ae7fdc976fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30061,7 +30061,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000

@@ -41,8 +41,6 @@ public class EnemyAnimation : MonoBehaviour
         {
             animator.Play("killer_right");
         }
-
-        Debug.Log(direction);
     }
 }
 

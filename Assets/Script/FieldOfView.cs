@@ -12,6 +12,11 @@ public class FieldOfView : MonoBehaviour
     public LayerMask targetLayer;
     public LayerMask obstructionLayer;
 
+    [SerializeField]
+    private float chaseSpeed;
+    [SerializeField]
+    private float walkSpeed;
+
     public bool CanSeePlayer { get; private set; }
 
     private AIDestinationSetter destinationSetterScript;
@@ -32,12 +37,12 @@ public class FieldOfView : MonoBehaviour
         if (CanSeePlayer)
         {
             destinationSetterScript.EnemySeesPlayer = true;
-            AIPathScript.maxSpeed = 4.3f;
+            AIPathScript.maxSpeed = chaseSpeed;
         }
         else
         {
             destinationSetterScript.EnemySeesPlayer = false;
-            AIPathScript.maxSpeed = 2;
+            AIPathScript.maxSpeed = walkSpeed;
         }
     }
 

@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro_cutscene.unity
     guid: 3b17241adbe9c424a879b5cdb5ea3ae0
+  - enabled: 1
+    path: Assets/Scenes/Jumpscare.unity
+    guid: 90865f1419643a848a69fbd8986eec8b
   m_configObjects: {}

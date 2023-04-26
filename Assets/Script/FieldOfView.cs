@@ -32,7 +32,7 @@ public class FieldOfView : MonoBehaviour
         if (CanSeePlayer)
         {
             destinationSetterScript.EnemySeesPlayer = true;
-            AIPathScript.maxSpeed = 4;
+            AIPathScript.maxSpeed = 4.3f;
         }
         else
         {

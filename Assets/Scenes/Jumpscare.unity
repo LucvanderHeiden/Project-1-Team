@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 215534694}
   - component: {fileID: 215534693}
   m_Layer: 0
-  m_Name: AudioPlayer
+  m_Name: Gb Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -405,8 +405,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0025177002, y: -0.3046}
-  m_SizeDelta: {x: 882.01, y: 390.6042}
+  m_AnchoredPosition: {x: 0.000030518, y: -0.000026737}
+  m_SizeDelta: {x: 2512.2769, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &278179389
 Animator:
@@ -502,8 +502,8 @@ Camera:
   m_GameObject: {fileID: 837940105}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

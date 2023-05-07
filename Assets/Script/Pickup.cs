@@ -16,8 +16,6 @@ public class Pickup : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) {
-            // spawn the sun button at the first available inventory slot ! 
-    
             for (int i = 0; i < inventory.slots.Length; i++)
             {
                 if (inventory.isFull[i] == false) { // check whether the slot is EMPTY

@@ -6,13 +6,16 @@ public class KeyDoor1 : MonoBehaviour {
 
     private Inventory inventory;
    
-    private void OnColliderEnter2D(Collider2D other)
+   private void Start()
     {
-        if (other.gameObject.tag == "Door")
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+    }
+
+    void Update()
+    {
+        if (inventory.isFull[0] && inventory.isFull[1] && inventory.isFull[2] && inventory.isFull[3])
         {
-            inventory.isFull[4] = true;
             Destroy(gameObject);
         }
     }
-
 }

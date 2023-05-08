@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject player;
     public GameObject enemy;
+    public GameObject finishLine;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,5 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
     }
 }

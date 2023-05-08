@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TrackDistance();
+        //TrackDistance();
     }
 
     private void FixedUpdate()
@@ -97,8 +97,8 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void TrackDistance()
-    {
-        distance = Vector3.Distance(transform.position, enemy.position);
-    }
+    //void TrackDistance()
+    //{
+    //    distance = Vector3.Distance(transform.position, enemy.position);
+    //}
 }

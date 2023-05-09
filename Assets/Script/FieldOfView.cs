@@ -22,13 +22,18 @@ public class FieldOfView : MonoBehaviour
     private AIDestinationSetter destinationSetterScript;
     private AIPath AIPathScript;
 
+    private AudioSource sfx;
+
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(FOVCheck());
         destinationSetterScript = GetComponent<AIDestinationSetter>();
         AIPathScript = GetComponent<AIPath>();
-    }
+
+        sfx = GetComponent<AudioSource>();
+        
+}
 
     // Update is called once per frame
 
@@ -38,11 +43,13 @@ public class FieldOfView : MonoBehaviour
         {
             destinationSetterScript.EnemySeesPlayer = true;
             AIPathScript.maxSpeed = chaseSpeed;
+            sfx.volume = 1;
         }
         else
         {
             destinationSetterScript.EnemySeesPlayer = false;
             AIPathScript.maxSpeed = walkSpeed;
+            sfx.volume = 0;
         }
     }
 

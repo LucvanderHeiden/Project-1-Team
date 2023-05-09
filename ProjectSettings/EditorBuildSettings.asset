@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cutscene_ending.unity
     guid: 254ba67865ad6dd4a8ade756cfb3cc20
+  - enabled: 1
+    path: Assets/Scenes/cutscene_killerroom.unity
+    guid: 6c656ab834698134ab8f24be4964eb4c
   m_configObjects: {}

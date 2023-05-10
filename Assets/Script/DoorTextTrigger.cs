@@ -19,9 +19,6 @@ public class DoorTextTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //doorTextSpriteRenderer = doorText.GetComponent<SpriteRenderer>();
-        //doorTextSpriteRenderer.enabled = false;
-
         newObjectiveText.gameObject.SetActive(false);
         dialogueImage.enabled = false;
         dialogueText.gameObject.SetActive(false);
@@ -38,7 +35,6 @@ public class DoorTextTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             //Debug.Log("COLLISION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            //doorTextSpriteRenderer.enabled = true;
             currentObjectiveText.gameObject.SetActive(false);
             newObjectiveText.gameObject.SetActive(true);
             dialogueImage.enabled = true;
@@ -53,7 +49,6 @@ public class DoorTextTrigger : MonoBehaviour
         WaitForSeconds wait = new WaitForSeconds(5f);
         yield return wait;
 
-        //doorText.SetActive(false);
         dialogueImage.enabled = false;
         dialogueText.gameObject.SetActive(false);
     }

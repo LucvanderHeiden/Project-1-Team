@@ -14,12 +14,18 @@ public class ObjectiveUpdater : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     private bool openDialogue = true;
 
+    public GameObject openDoor;
+    private SpriteRenderer openDoorSpriteRenderer;
+
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
 
         dialogueImage.enabled = false;
         dialogueText.gameObject.SetActive(false);
+
+        openDoorSpriteRenderer = openDoor.GetComponent<SpriteRenderer>();
+        openDoorSpriteRenderer.enabled = false;
     }
 
     void Update()
@@ -33,6 +39,7 @@ public class ObjectiveUpdater : MonoBehaviour
             dialogueText.gameObject.SetActive(true);
 
             openDialogue = false;
+            openDoorSpriteRenderer.enabled = true;
 
             StartCoroutine(UpdateObjective());
         }

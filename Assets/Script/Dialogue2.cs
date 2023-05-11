@@ -20,22 +20,22 @@ public class Dialogue2 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-       if(Input.GetMouseButtonDown(0))
-       {
-            StartDialogue(); 
-           if(textComponent.text == lines[index])
-           {
-               NextLine();
-           }
-           else
-           {
-               StopAllCoroutines();
-               textComponent.text = lines[index];
-           }
-       } 
-    }
+    // void Update()
+    // {
+    //    if(Input.GetMouseButtonDown(0))
+    //    {
+    //         StartDialogue(); 
+    //        if(textComponent.text == lines[index])
+    //        {
+    //            NextLine();
+    //        }
+    //        else
+    //        {
+    //            StopAllCoroutines();
+    //            textComponent.text = lines[index];
+    //        }
+    //    } 
+    // }
 
     void StartDialogue()
     {

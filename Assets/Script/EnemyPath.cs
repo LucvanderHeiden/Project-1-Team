@@ -15,9 +15,35 @@ public class EnemyPath : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targetPos = PosB.position;
+        randomInt = Random.Range(1, 6);
 
-        enemy = GameObject.Find("enemy");
+        if (randomInt == 1)
+        {
+            targetPos = PosA.position;
+        }
+
+        if (randomInt == 2)
+        {
+            targetPos = PosB.position;
+        }
+
+        if (randomInt == 3)
+        {
+            targetPos = PosC.position;
+        }
+
+        if (randomInt == 4)
+        {
+            targetPos = PosD.position;
+        }
+
+        if (randomInt == 5)
+        {
+            targetPos = PosE.position;
+        }
+    
+
+    enemy = GameObject.Find("enemy");
     }
 
     // Update is called once per frame

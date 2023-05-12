@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Dialogue : MonoBehaviour
+public class DialogueDoor : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public GameObject dialogueBox;
@@ -16,9 +16,16 @@ public class Dialogue : MonoBehaviour
     {
         dialogueBox.gameObject.SetActive(false);
         textComponent.text = string.Empty;
-        Invoke("StartDialogue", 1f);
     }
 
+   void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            StartDialogue();
+        }
+    }
+    
     void StartDialogue()
     {
         if(dialogueBox.gameObject.activeInHierarchy == false)

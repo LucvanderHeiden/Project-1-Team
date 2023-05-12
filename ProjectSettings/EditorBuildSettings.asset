@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/gameover2.unity
     guid: 6c32ae518b6ade74e8c0fde25e6c6a9a
+  - enabled: 1
+    path: Assets/Scenes/kitchen_cutscene.unity
+    guid: eef7d52db7879ed4fbe85d8d759c5742
   m_configObjects: {}

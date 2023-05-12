@@ -7,6 +7,6 @@ public class LM_level2 : MonoBehaviour
 {
    public void StartScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 9);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 }

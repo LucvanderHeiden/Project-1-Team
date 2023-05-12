@@ -861,7 +861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeTime: 18
-  sceneName: 
+  sceneName: Intro_cutscene
 --- !u!4 &1891341517
 Transform:
   m_ObjectHideFlags: 0

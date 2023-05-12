@@ -6,6 +6,7 @@ public class Pickup : MonoBehaviour {
 
     private Inventory inventory;
     public GameObject itemButton;
+    public AudioClip music;
     // public GameObject effect;
 
     private void Start()
@@ -19,6 +20,7 @@ public class Pickup : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) {
+            AudioSource.PlayClipAtPoint(music, transform.position);
             for (int i = 0; i < inventory.slots.Length; i++)
             {
                 Debug.Log("isFull[" + i + "]: " + inventory.isFull[i]);

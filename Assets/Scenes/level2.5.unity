@@ -21437,11 +21437,11 @@ PrefabInstance:
       objectReference: {fileID: 39317037}
     - target: {fileID: 5393502264560089566, guid: a8db75db343665649a31cf1daf233e88, type: 3}
       propertyPath: maxDistance
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5393502264560089566, guid: a8db75db343665649a31cf1daf233e88, type: 3}
       propertyPath: maxIntensity
-      value: 0.4
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 5393502264560089566, guid: a8db75db343665649a31cf1daf233e88, type: 3}
       propertyPath: targetObject1
@@ -87648,6 +87648,10 @@ PrefabInstance:
       propertyPath: target2
       value: 
       objectReference: {fileID: 1943141879}
+    - target: {fileID: 8594522164478164292, guid: 7cac9a921c5e3c64e81153e3a5e8dac3, type: 3}
+      propertyPath: radius
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8594522164478164292, guid: 7cac9a921c5e3c64e81153e3a5e8dac3, type: 3}
       propertyPath: walkSpeed
       value: 3
